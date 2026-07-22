@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Services — ThoughtBridge HR Solutions</title>
+<meta name="description" content="Executive search services, sector coverage and commercial terms from ThoughtBridge HR Solutions.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,540;0,9..144,650;1,9..144,440;1,9..144,560&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+  .svc-blob-a{ width:480px; height:480px; top:-180px; left:-140px; background: radial-gradient(circle, var(--teal-2), transparent 70%); }
+  .svc-blob-b{ width:400px; height:400px; bottom:-180px; right:-120px; background: radial-gradient(circle, var(--lime), transparent 70%); opacity:.25; }
+
+  .func-grid{ display:grid; grid-template-columns: repeat(3,1fr); gap:20px; }
+  @media (max-width:900px){ .func-grid{ grid-template-columns: 1fr 1fr; } }
+  @media (max-width:560px){ .func-grid{ grid-template-columns: 1fr; } }
+  .func-pill{
+    background: var(--paper); border:1px solid var(--line); border-radius: var(--radius-md);
+    padding: 26px 24px; display:flex; align-items:center; gap:16px; box-shadow: var(--shadow-card);
+  }
+  .func-pill .ic{ width:44px; height:44px; border-radius:12px; background: var(--ink); color:var(--lime); display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-style:italic; font-weight:700; flex-shrink:0; }
+  .func-pill strong{ font-family:'Manrope',sans-serif; color:var(--ink); font-size:1rem; }
+
+  .map-list{ display:grid; grid-template-columns: repeat(4,1fr); gap: 13px; }
+  @media (max-width:760px){ .map-list{ grid-template-columns: repeat(2,1fr); } }
+  .map-chip{
+    padding: 16px 16px; background: var(--paper); border:1px solid var(--line); border-radius: var(--radius-sm);
+    font-weight:700; color:var(--ink); font-size:.9rem; text-align:center; box-shadow: var(--shadow-card);
+    transition: transform .3s var(--ease-soft), background .3s var(--ease-soft), color .3s var(--ease-soft);
+  }
+  .map-chip:hover{ background: var(--ink); color:#fff; transform: translateY(-4px); }
+
+  .pricing-card{
+    background: linear-gradient(155deg, var(--ink), #103C41 65%, #12545C); color:#EAF3F1; border-radius: var(--radius-xl);
+    padding: 54px; display:grid; grid-template-columns: 1.1fr 1fr; gap:48px; position:relative; overflow:hidden; border:1px solid var(--line-dark);
+  }
+  @media (max-width:900px){ .pricing-card{ grid-template-columns:1fr; padding:36px; } }
+  .term-row{ display:flex; justify-content:space-between; align-items:baseline; padding: 18px 0; border-bottom:1px solid rgba(255,255,255,.14); }
+  .term-row:last-child{ border-bottom:none; }
+  .term-row .label{ color:#9FC5BF; font-size:.9rem; }
+  .term-row .val{ font-family:'Fraunces',serif; font-style:italic; font-size:1.4rem; color:#fff; text-align:right; }
+
+  .step-compact{ display:flex; gap:18px; align-items:flex-start; padding: 20px 0; border-bottom: 1px solid var(--line); }
+  .step-compact:last-child{ border-bottom:none; }
+  .step-compact .n{ font-family:'Fraunces',serif; font-style:italic; color:var(--lime-deep); font-size:1.8rem; width:48px; flex-shrink:0; }
+</style>
+</head>
+<body>
+
+<nav class="site-nav">
+  <div class="nav-inner">
+    <a class="brand" href="index.html"><img src="logo.png" alt="ThoughtBridge HR Solutions logo"></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div style="display:flex; align-items:center; gap:14px;">
+      <a class="nav-cta" href="contact.html">Start a search →</a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero grain">
+  <div class="page-hero-blob svc-blob-a" data-parallax="0.08"></div>
+  <div class="page-hero-blob svc-blob-b" data-parallax="0.05"></div>
+  <div class="wrap" style="position:relative; z-index:2;">
+    <div class="eyebrow on-dark">What we do</div>
+    <h1 style="max-width:19ch;">Executive search, run like a discipline — not a numbers game.</h1>
+    <p class="ink-soft" style="max-width:60ch; font-size:1.1rem;">One service, done properly: finding, validating and placing mid-to-senior talent for organisations hiring across Africa, the Middle East and Asia Pacific.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="reveal" style="max-width:640px; margin-bottom:44px;">
+      <div class="eyebrow">Sector coverage</div>
+      <h2>We close mandates across every core function.</h2>
+    </div>
+    <div class="func-grid">
+      <div class="func-pill reveal"><div class="ic">F</div><strong>Finance &amp; Accounting</strong></div>
+      <div class="func-pill reveal reveal-delay-1"><div class="ic">T</div><strong>Technical &amp; Engineering</strong></div>
+      <div class="func-pill reveal reveal-delay-2"><div class="ic">O</div><strong>Operations</strong></div>
+      <div class="func-pill reveal"><div class="ic">S</div><strong>Sales &amp; Business Development</strong></div>
+      <div class="func-pill reveal reveal-delay-1"><div class="ic">IT</div><strong>Information Technology</strong></div>
+      <div class="func-pill reveal reveal-delay-2"><div class="ic">+</div><strong>...and many more</strong></div>
+    </div>
+  </div>
+</section>
+
+<section style="background:var(--paper-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line);">
+  <div class="wrap grid-2">
+    <div class="reveal">
+      <div class="eyebrow">Markets we place into</div>
+      <h2>A decade of on-the-ground relationships across Africa.</h2>
+      <p style="font-size:1.02rem;">Our clientele spans large and midsize corporates who trust us with roles that are hard to source remotely. We keep adding credible organisations from both regions, every year.</p>
+      <div class="map-list" style="margin-top:26px;">
+        <div class="map-chip">Kenya</div><div class="map-chip">Tanzania</div><div class="map-chip">Uganda</div><div class="map-chip">Malawi</div>
+        <div class="map-chip">Nigeria</div><div class="map-chip">Zambia</div><div class="map-chip">Sudan</div><div class="map-chip">Uzbekistan</div>
+        <div class="map-chip">Angola</div><div class="map-chip">DRC</div><div class="map-chip">Ghana</div><div class="map-chip">Mauritius</div>
+        <div class="map-chip">Burkina Faso</div>
+      </div>
+    </div>
+    <div class="reveal reveal-delay-1">
+      <div class="card" style="padding:38px;">
+        <h3 style="font-style:italic;">How a shortlist gets built</h3>
+        <div class="step-compact"><span class="n">01</span><div><strong>Source</strong><p style="margin:.25em 0 0;">Job portals, direct headhunting, referencing and professional networks like LinkedIn — this is merely 10% of the task.</p></div></div>
+        <div class="step-compact"><span class="n">02</span><div><strong>Validate</strong><p style="margin:.25em 0 0;">Each candidate is thoroughly assessed across every tenure against the specific role on offer.</p></div></div>
+        <div class="step-compact"><span class="n">03</span><div><strong>Reference-check</strong><p style="margin:.25em 0 0;">We speak to people who've actually managed them — fitment isn't just skills, it's attitude and performance too.</p></div></div>
+        <div class="step-compact"><span class="n">04</span><div><strong>Confirm</strong><p style="margin:.25em 0 0;">Only once the candidate sends written confirmation is their CV considered ready to share.</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="reveal" style="max-width:640px; margin-bottom:40px;">
+      <div class="eyebrow">Commercials</div>
+      <h2>Standard recruitment consultant terms — no surprises.</h2>
+    </div>
+    <div class="pricing-card reveal">
+      <div>
+        <div class="tag on-dark">Fee structure</div>
+        <h3 style="color:#fff; margin-top:16px; font-style:italic;">One straightforward fee, tied to the salary you offer.</h3>
+        <p style="color:#9FC5BF;">We only get paid when you find the right person — and we stand behind every placement with a replacement clause.</p>
+      </div>
+      <div>
+        <div class="term-row"><span class="label">Placement fee</span><span class="val">8.33%</span></div>
+        <div class="term-row"><span class="label">Fee basis</span><span class="val" style="font-size:1.05rem;">1 overseas month's salary of annual package</span></div>
+        <div class="term-row"><span class="label">Replacement clause</span><span class="val">3 months</span></div>
+        <div class="term-row"><span class="label">Payment credit period</span><span class="val">1 month post-joining</span></div>
+      </div>
+    </div>
+    <p class="reveal" style="text-align:center; margin-top:24px; font-size:.9rem;">On mutual agreement, we share a detailed commercial agreement before any search begins.</p>
+  </div>
+</section>
+
+<section class="grain" style="padding-top:0; background:var(--ink);">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <div>
+        <div class="eyebrow on-dark">Let's begin</div>
+        <h2>Ready to open a mandate with us?</h2>
+        <p>Share the role and the market — we'll take it from there.</p>
+      </div>
+      <a class="btn btn-gold" href="contact.html">Start a conversation →</a>
+    </div>
+  </div>
+</section>
+
+<footer class="grain">
+  <span class="footer-mark">ThoughtBridge</span>
+  <div class="wrap footer-grid">
+    <div>
+      <img src="logo.png" alt="ThoughtBridge HR" style="height:32px; margin-bottom:16px; filter:brightness(0) invert(1);">
+      <p style="color:#7FA39D; max-width:34ch;">Executive search for mid-to-senior mandates across Africa, the Middle East and Asia Pacific since 2013.</p>
+    </div>
+    <div>
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Reach us</h4>
+      <ul>
+        <li><a href="tel:+919898880080">+91 989 888 0080</a></li>
+        <li><a href="mailto:kashmira.sethna@thoughtbridgehr.com">kashmira.sethna@thoughtbridgehr.com</a></li>
+        <li><a href="https://www.linkedin.com/in/kashmirasethna" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© 2026 ThoughtBridge HR Solutions. All rights reserved.</span>
+    <span>Managing Director — Kashmira Sethna</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
